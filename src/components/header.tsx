@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function header() {
+export default function Header() {
   return (
-    <div>
-      
-    </div>
+    //z-index so header is always on top
+    <header className='z-[999] relative'>
+        <div className='fixed top-0 left-1/2 -translate-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-10 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full'></div>
+    </header>
   )
 }
